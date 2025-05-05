@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: نوینو پرداخت | ووکامرس
-Version: 1.4.3
-Author: NovinoPay
-Description:  افزونه پرداخت آنلاین نوینو پرداخت برای فروشگاه ساز ووکامرس
-Plugin URI: https://novinopay.com
+Plugin Name: پرداخت یاری ایران پی مکس | ووکامرس
+Version: 0.0.1
+Author: IranPaymex
+Description:  افزونه پرداخت آنلاین ایران پی مکس برای فروشگاه ساز ووکامرس
+Plugin URI: https://iranpaymex.com
 */
-include_once("class-wc-gateway-novinopay.php");
+include_once("class-wc-gateway-iranpaymex.php");

@@ -5,15 +5,15 @@ if (!defined('ABSPATH')) {
 }
 
 
-function Load_novinopay_Gateway()
+function Load_iranpaymex_Gateway()
 {
 
-    if (!function_exists('Woocommerce_Add_novinopay_Gateway') && class_exists('WC_Payment_Gateway') && !class_exists('WC_novino')) {
+    if (!function_exists('Woocommerce_Add_iranpaymex_Gateway') && class_exists('WC_Payment_Gateway') && !class_exists('WC_novino')) {
 
 
-        add_filter('woocommerce_payment_gateways', 'Woocommerce_Add_novinopay_Gateway');
+        add_filter('woocommerce_payment_gateways', 'Woocommerce_Add_iranpaymex_Gateway');
 
-        function Woocommerce_Add_novinopay_Gateway($methods)
+        function Woocommerce_Add_iranpaymex_Gateway($methods)
         {
             $methods[] = 'WC_novino';
             return $methods;
@@ -478,4 +478,4 @@ function Load_novinopay_Gateway()
     }
 }
 
-add_action('plugins_loaded', 'Load_novinopay_Gateway', 0);
+add_action('plugins_loaded', 'Load_iranpaymex_Gateway', 0);
